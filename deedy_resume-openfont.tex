@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Alexandros}{Ioannidis}{ \urlstyle{same}\url{http://alexandrosioannidis.tk} \\
+\href{mailto:alexioanid@yahoo.gr}{alexioanid@yahoo.gr} | 7423350580
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Strathclyde}
+\descript{Ph.D. in Computer Science \\ Exp. End Date: Oct/2020}
+\descript{Conc. Machine Learning, Text Processing \& Information Retrieval }
+\location{Glasgow, UK}
+\sectionsep
+
+\subsection{University of Strathclyde}
+\descript{PG RDP Cert | Exp. End Date: Oct/2020}
+\location{Glasgow, UK | ECTS 25 / 60}
+\sectionsep
+
+\subsection{University of Strathclyde}
+\descript{M.Sc. in Advanced Computer Science}
+\location{Glasgow, UK | Grade 69\% (Merit)}
+\sectionsep
+
+\subsection{Harokopion University}
+\descript{B.Sc. in Informatics and Telematics }
+\location{Athens, Greece | Grade 7.42/10 (Merit)}
+\sectionsep
+
+\descript{2nd General Lyceum of Vrilissia, Technological Stream}
+\location{Athens, Greece | Grade 17.8 / 20}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/it21208}{\custombold{it21208}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/alexandrosioannidis}{\custombold{alexandrosioannidis}} \\
+Twitter://  \href{https://twitter.com/it21208alex}{\custombold{@it21208alex}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Advanced Machine Learning \\
+Information Retrieval  \\
+{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}}
+\sectionsep
+
+\subsection{Undergraduate}
+Software Engineering \\
+Operating Systems (Linux, Windows) \\
+Artificial Intelligence \\
+Unix Tools and Scripting \\
+A bit of Functional Programming \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 20,000 lines:}
+R  \textbullet{}  Python \textbullet{} Java \textbullet{} 
+JavaScript \textbullet{} HTML \\ \textbullet{} Oracle SQL \textbullet{} \LaTeX\ \\ 
+\location{Over 3,000 lines:}
+MySQL \textbullet{} MATLAB \textbullet{} SPIM MIPS \textbullet{} C 
+\location{Familiar:}
+Apache Lucene \textbullet{} Apache Spark \textbullet{} SQL Plus
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Newslines}
+\descript{| Researcher - Data Analyst }
+\location{Aug 2017 – Sep 2017 | Glasgow, UK}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Text processing on media news stream using Python libraries such as nltk, beautiful soup, scikit-learn, pandas, numpy, re and many more.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Central Bank of Greece}
+\descript{| Technology Analyst Intern }
+\location{Jul 2015 – Jul 2016 | Athens, Greece}
+\begin{tightemize}
+\item Participation in the implementation/migration to the Eurosystem Target II Security and database (production \& test) management.\item Operation of FT Console System for monitoring components of the Secondary Securities Market and contributed to the Bonds Report Server System in VS2012 \& VB2012. \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Strathclyde-iSchool Lab}
+\descript{| Ph.D. Researcher}
+\location{Sep 2017 – Present | Glasgow, UK}
+Information Retrieval and Machine Learning on empirical systematic reviews.
+\sectionsep
+
+\runsubsection{University of Strathclyde}
+\descript{| Post graduate Researcher}
+\location{Feb 2017 – Jul 2017 | Glasgow, UK}
+The purpose of the research was to assert the generality of the predictive RFMTC model as an improved more customisable alternative of the RFM model and other Machine Learning algorithms such as (SVM, Random Forest, K-Means, etc.) and justify the additional implementation complexity of some model parameters such as time since first purchase or donation of a customer in a certain period and churn rate as a productive one. Used extensively the R scripting language and CRAN repository for the minimisation of objective non linear functions and Excel.
+\sectionsep
+
+\runsubsection{Harokopion University Lab}
+\descript{| Undergraduate Researcher}
+\location{Jan 2016 – May 2016 | Athens, Greece}
+Extended a system that encourages users of a website by proposing new films tailored to the needs of each user. More specifically, the algorithm that was parallelized with Java and Apache Spark, is the third optimal algorithm in the Kaggle competition conducted by Netflix to find the best collaborative filtering algorithm for predicting user ratings for films based on previous reviews.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Workshops
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Workshops} 
+\begin{tabular}{rll}
+May 2017 & J.P. Morgan Glasgow & \textsuperscript{}  Big Data Analytics Introduction \\
+2016 & University of Piraeus, Athens \textsuperscript  & Fosscomm 2016\\
+2014-2015 & ATHENA Research \& Innovation Center & Agriculture Development Systems\\
+2014	 & Technopolis Innovation Center Athens  & Presentation \& Communication \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{AWARDS} 
+\begin{tabular}{rll}
+2017-2020 	& Univeristy of Strathclyde    & Ph.D. Scholarship Award (Stipend\&Bursary) \\
+Dec 2016   & J.P. Morgan Glasgow  & 3rd place in Machine Learning Workshop \\ 
+2016   &  TEDX Strathclyde  & 1st place Design Challenge \\
+2016-Present  &  BCS   & Student Member\\
+\end{tabular}
+\sectionsep
+
+\section{References} 
+\begin{tabular}{rll}
+Univeristy of Strathclyde & Dr Martin Halvey and Dr Leif Azzopardi\\
+Central Bank of Greece & Directors Dr Eythimios Gatzonas and Mr George Stubos 
+\end{tabular}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}
